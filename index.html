@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "css.style">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <title>Landing Page</title>
 </head>
 <body>
     <header>
-        <div>Header Logo</div>
-        <div class = "link">header link one</div>
-        <div class = "link">header link two</div>
-        <div class = "link">header link three</div>
+        <div class = "logo-links">
+            <div>Header Logo</div>
+            <div class = "link">
+                <div>header link one</div>
+                <div>header link two</div>
+                <div>header link three</div>
+            </div>
+        </div>
+        <div class = "container">
+        <div class = "left">
         <h1>This website is awesome</h1>
         <p>This website has some subtext that goes here under the main title. It's a smaller font. It's a smaller font and the color is lower contrast</p>
-        <button>Sign up</button>
-        <br>
+        <button type="button" onclick="alert('Sign up notification')">Sign up</button>
+        </div>
         <img src = "" alt="this is a placeholder for an image">
+        </div>
     </header>
     <main>
         <h2>Some random information.</h2>
+        <div class = "main-container">
         <div class = "info">
             <img src = "">
             <div class = "text">this is some subtext under an illustration or image</div>
@@ -36,6 +47,7 @@
         <div class = "info">
             <img src = "">
             <div class = "text">this is some subtext under an illustration or image</div>
+        </div>
         </div>
         <figure>
             <blockquote cite = "https://www.theodinproject.com/lessons/foundations-landing-page">
@@ -45,12 +57,15 @@
         </figure>
 
         <div class = "signup-reminder">
-            <div>Call to action! It's time!</div>
+            <div class = "signup-desc">
+            <div><strong>Call to action! It's time!</strong></div>
             <div>Sign up for our product by clicking that button right over there!</div>
+            </div> 
+            <div class = "signup-button">Sign up</div>
         </div>
     </main>
     <footer>
-        <div> Copyright @ The Odin Project 2021</div>
+        <div> Copyright © The Odin Project 2021</div>
     </footer>
 </body>
 </html>
